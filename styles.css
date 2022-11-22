@@ -1,0 +1,33 @@
+body {
+    background:blueviolet;
+    font-family:Helvetica;
+}
+
+.assignment {
+    display:flex;
+    background:#D79CFD;
+    padding:25px;
+    margin:15px;
+}
+
+.assignment img {
+    padding:15px;
+    width:200px;
+    border:2px;
+}
+
+h1 {
+    display:flex;
+    color:#D79CFD;
+    text-align:center;
+}
+
+a {
+    display:flex;
+    text-decoration:none;
+    color:whitesmoke
+}
+
+a:hover {
+    color:black; 
+}
