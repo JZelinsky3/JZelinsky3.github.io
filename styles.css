@@ -5,9 +5,9 @@ body {
 
 .assignment {
     display:flex;
-    background:#D79CFD;
     padding:25px;
     margin:15px;
+    background:#34f0b2;
 }
 
 .assignment img {
@@ -16,16 +16,24 @@ body {
     border:2px;
 }
 
+.assignment img:hover {
+    border:4px dashed white;
+}
+
 h1 {
     display:flex;
-    color:#D79CFD;
+    color:#ffffff;
     text-align:center;
+}
+
+h1:hover {
+    color:black;
 }
 
 a {
     display:flex;
     text-decoration:none;
-    color:whitesmoke
+    color:rgb(255, 255, 255)
 }
 
 a:hover {
