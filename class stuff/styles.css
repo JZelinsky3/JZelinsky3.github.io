@@ -1,0 +1,79 @@
+/* Structure */
+body {
+    background-color:burlywood;
+}
+
+/* Tables */
+table {
+    border-collapse: collapse;
+}
+
+td {
+    background-color: green;
+    border:3px solid slateblue;
+}
+
+th {
+    background-color: blueviolet;
+    border:3px dashed lawngreen;
+
+#main-nav ul {
+    padding-left: 0px;
+}
+
+#main-nav li {
+    list-style-type: none;
+    display: inline-block;
+}
+
+#main-nav a {
+    text-decoration: none;
+    color: black;
+}
+
+#main-nav a:hover {
+    border-bottom: 1px solid cadetblue;
+}
+
+}
+
+/* Typography */
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1{
+    color:sienna;
+}
+
+h2{
+    color:lightsalmon;
+}
+
+p {
+    color:aliceblue;
+}
+
+table {
+    color:tomato;
+}
+
+a {
+    color:plum;
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+        background-color: lightblue;
+    }
+}
+
+.info {
+    border:
+    background:
+}
+
+.info-header {
+    background-color:
+    margin: 
+}

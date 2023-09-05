@@ -1,0 +1,18 @@
+//Copyright 2023 jzelinsky
+#include<iostream>
+using std::cout;
+int main() {
+    cout << "hello world";
+    return 0;
+}
+
+
+using std::cout;
+using std::endl;
+
+int main() {
+    // \n is the newline escape sequence - output a new line
+    cout << "I said, \"Hi there world\"\n";
+    cout <<"hello world\rsup?" << endl;
+    return 0;
+}
