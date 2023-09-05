@@ -9,13 +9,13 @@ table {
 }
 
 td {
-    background-color: green;
-    border:3px solid slateblue;
+    background-color: whitesmoke;
+    border:3px solid navy;
 }
 
 th {
-    background-color: blueviolet;
-    border:3px dashed lawngreen;
+    background-color: white;
+    border:3px dashed navy;
 
 #main-nav ul {
     padding-left: 0px;
@@ -47,7 +47,7 @@ h1{
 }
 
 h2{
-    color:lightsalmon;
+    color:sienna;
 }
 
 p {
@@ -55,11 +55,11 @@ p {
 }
 
 table {
-    color:tomato;
+    color:sienna;
 }
 
 a {
-    color:plum;
+    color:navy;
 }
 
 @media only screen and (max-width: 768px) {
