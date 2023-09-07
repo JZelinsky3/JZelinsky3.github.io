@@ -1,0 +1,93 @@
+/* Structure */
+
+body {
+    font-family: ;
+}
+
+#main-nav {
+    margin: auto;
+    width: 80%;
+    background-color: ;
+    padding: ;
+}
+
+/* Main Nav */
+
+#main-nav ul {
+    padding-left: 0px;
+}
+
+/* Horizontal Nav */
+
+.horiz-nav ul {
+    padding-left: ;
+}
+
+.horiz-nav li {
+    list-style-type: none;
+    margin: 0 5px;
+}
+
+.horiz-nav a {
+    text-decoration: none;
+}
+
+/* Main Nav */
+
+#main-nav {
+
+}
+
+#main-header, #main-footer {
+    margin: auto;
+    width: 80%;
+    padding: 5px;
+}
+
+#main-header {
+    background-color: ;
+}
+
+/* User Nav */
+
+
+/* Typography */
+
+h1 {
+    text-align: center;
+}
+
+/* Footer Nav */
+
+#main-footer, #main-footer a {
+    color: ;
+}
+
+#main-footer ul {
+    padding-left: 1%
+}
+
+#main-footer li {
+    list-style-type: none;
+}
+
+#main-footer a {
+    text-decoration: none;
+}
+
+.footer-logo-text {
+    font-size: 1.5em;
+}
+
+/* Larger Resolution */
+
+@media only screen and (min-width: 768px) {
+    .horiz-nav ul,
+    .flex-container {
+
+    }
+}
+
+.collof2 {
+    flex: 1;
+}
