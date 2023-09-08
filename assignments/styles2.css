@@ -13,13 +13,6 @@ body {
     padding: 5px;
 }
 
-#main-nav {
-    margin: auto;
-    width: 85%;
-    background-color: palegreen;
-    padding: 8px;
-}
-
 #main-header {
     background-color: cadetblue;
 }
@@ -32,12 +25,12 @@ body {
 /* Horizontal Nav */
 
 .horiz-nav ul {
-    padding-left: 6%;
+    padding-left: 45px;
 }
 
 .horiz-nav li {
     list-style-type: none;
-    margin: 0 5px;
+    margin: 0 10px;
 }
 
 .horiz-nav a {
@@ -57,7 +50,11 @@ h1 {
 
 #main-footer,
 #main-footer a {
-    color: blueviolet;
+    color: cornflowerblue;
+}
+
+#main-footer {
+    background-color: brown;
 }
 
 #main-footer ul {
@@ -81,7 +78,7 @@ h1 {
 @media only screen and (min-width: 768px) {
     .horiz-nav ul,
     .flex-container {
-        display: flexbox;
+        display: flex;
     }
 }
 
@@ -90,9 +87,9 @@ h1 {
 }
 
 .flex-container {
-    justify-content:first baseline;
+    justify-content:space-between;
 }
 
-.collof2 {
+.col1of2 {
     flex: 1;
 }
