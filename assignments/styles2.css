@@ -46,6 +46,10 @@ h1 {
     text-align: center;
 }
 
+a {
+    color:aqua;
+}
+
 /* Footer Nav */
 
 #main-footer,
