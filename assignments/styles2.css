@@ -1,17 +1,29 @@
 /* Structure */
 
 body {
-    font-family: ;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Main Nav */
+
+#main-header,
+#main-footer {
+    margin: auto;
+    width: 80%;
+    padding: 5px;
 }
 
 #main-nav {
     margin: auto;
-    width: 80%;
-    background-color: ;
-    padding: ;
+    width: 85%;
+    background-color: palegreen;
+    padding: 8px;
 }
 
-/* Main Nav */
+#main-header {
+    background-color: cadetblue;
+}
+
 
 #main-nav ul {
     padding-left: 0px;
@@ -20,7 +32,7 @@ body {
 /* Horizontal Nav */
 
 .horiz-nav ul {
-    padding-left: ;
+    padding-left: 6%;
 }
 
 .horiz-nav li {
@@ -30,22 +42,6 @@ body {
 
 .horiz-nav a {
     text-decoration: none;
-}
-
-/* Main Nav */
-
-#main-nav {
-
-}
-
-#main-header, #main-footer {
-    margin: auto;
-    width: 80%;
-    padding: 5px;
-}
-
-#main-header {
-    background-color: ;
 }
 
 /* User Nav */
@@ -59,8 +55,9 @@ h1 {
 
 /* Footer Nav */
 
-#main-footer, #main-footer a {
-    color: ;
+#main-footer,
+#main-footer a {
+    color: blueviolet;
 }
 
 #main-footer ul {
@@ -84,8 +81,16 @@ h1 {
 @media only screen and (min-width: 768px) {
     .horiz-nav ul,
     .flex-container {
-
+        display: flexbox;
     }
+}
+
+#main-nav ul {
+    justify-content: center;
+}
+
+.flex-container {
+    justify-content:first baseline;
 }
 
 .collof2 {
