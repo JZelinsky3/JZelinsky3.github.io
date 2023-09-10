@@ -6,28 +6,37 @@
     </head>
 
     <body>
-        <h1>CSCE 242: Web Applications</h1>
 
-        <h2>Joe Zelinsky</h2>
+        <div id="name">
+            <h3>Joe Zelinsky</h3>
+        </div>
 
-        <p>Welcome to my website</p>
+        <header id="main-header">
+            <h1>CSCE 242: Web Applications</h1>
 
-        <h2>Assignments</h2>
-        <ul id="list-nav">
-            <li>
-                <a href="assignments/assignment 1/assignment1.html">Assignment 1</a>
-            </li>
-            <li>
-                <a href="assignments/assignment 2/assignment2.html">Assignment 2</a>
-            </li>
-            <li>
-                <a href="assignments/assignment 3/assignment3.html">Assignment 3</a>
-            </li>
-        </ul>
+            <h2>Assignments</h2>
+        </header>
 
-        <p style="text-align: center;">
-        <img src="pictures/ms.png" width="570" height="350">
-        </p>
+    <main id="main-content">
+        <div class="flex-container">
+        <section class="col1of3">
+            <a href="assignments/assignment 1/assignment1.html"><strong>Assignment 1 - Basic HTML</strong></a> <br>
+            <a href="assignments/assignment 1/assignment1.html"><img src="pictures/asmt1.png" width="350" height="400"></a>
+                <p class="colwrd">Website with lists, tables, links to other websites, and pictures.</p>
+        </section> <br>
+        
+        <section class="col2of3">
+            <a href="assignments/assignment 2/assignment2.html"><strong>Assignment 2 - Basic CSS</strong></a> <br>
+            <a href="assignments/assignment 2/assignment2.html"><img src="pictures/asmt2.png" width="350" height="400"></a>
+                <p class="colwrd">Website with hover text features, links to different pages and a link back to home page.</p>
+        </section> <br>
+        
+        <section class="col3of3">
+            <a href="assignments/assignment 3/assignment3.html"><strong>Assignment 3 - Page Layout</strong></a> <br>
+            <a href="assignments/assignment 3/assignment3.html"><img src="pictures/asmt3.png" width="350" height="400"></a>
+                <p class="colwrd">Website featuring a navigation system, formatting text in different sections using header, footer, aside, and others. Also has columns and placeholder images.</p>
+        </section>
+    </main>
 
     </body>
     
