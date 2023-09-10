@@ -50,6 +50,11 @@ h3 {
     color: lightcoral;
 }
 
+#main-footer {
+    color: bisque;
+    text-align: center;
+}
+
 img {
     border: 5px dashed rgb(33, 33, 156);
     border-radius: 8px;
