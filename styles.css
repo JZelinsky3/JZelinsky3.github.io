@@ -55,14 +55,14 @@ h3 {
     text-align: center;
 }
 
-img {
+#main-content img {
     border: 5px dashed rgb(33, 33, 156);
     border-radius: 8px;
     padding: 5px;
     margin: 10px;
   }
 
-img:hover {
+#main-content img:hover {
     border: 10px solid;
     color: lightcoral;
 }
@@ -139,4 +139,16 @@ img:hover {
     text-align: center;
     border-radius: 5px;
     margin: 10px;
+}
+
+#sec-content img {
+    border: 5px dashed rgb(33, 33, 156);
+    border-radius: 8px;
+    padding: 5px;
+    margin: 10px;
+  }
+
+#sec-content img:hover {
+    border: 10px solid;
+    color: bisque;
 }
