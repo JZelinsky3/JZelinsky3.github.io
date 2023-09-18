@@ -1,0 +1,158 @@
+body {
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.content {
+    width: 100%;
+}
+
+.box {
+    background-color: #b6e9a8;
+    border: 5px solid #2c7327;
+
+}
+
+h1 {
+    text-align: center;
+    font-size: 35px;
+}
+
+h2 {
+    text-align: center;
+    color: #fff;
+}
+
+h3 {
+    margin: 1%;
+    font-size: 200%;
+    color: #27732a;
+}
+
+p {
+    color: black;
+}
+
+#main-header {
+    background-color: #1c4b18;
+    display: block;
+    margin: 0;
+    margin-bottom: 2%;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    padding: 5px;
+}
+
+#main-footer {
+    background-color: #1f4b18;
+    width:97%;
+    display:block;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    padding: 5px;
+}
+
+button {
+    background-color: #194b18;
+    border: 2px solid white;
+    color: white;
+    padding: 10px 22px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    border-radius: 10px;
+}
+
+button:hover {
+    background-color: white;
+    color: #18384b;
+    border: 2px solid #1a4b18;
+}
+
+.middle {
+    text-align: center;
+    justify-content: center;
+}
+
+.buttons {
+    margin-bottom: 2%;
+}
+
+.hide {
+    visibility: hidden;
+}
+
+#icon {
+    align-items: center;
+    text-align: center;
+    border: 16px solid #f3f3f3;
+    border-top: 16px solid #53db34;
+    border-radius: 50%;
+    margin-left: 35%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    width: 20%;
+    aspect-ratio: 1 / 1;
+}
+
+.animate {
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-name: animate;
+}
+
+@keyframes animate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.input {
+    margin-left: 3%;
+}
+
+.col1of3 {
+    flex: 1;
+}
+.col2of3 {
+    flex: 2;
+}
+
+.col3of3 {
+    flex: 2;
+}
+
+.toutput {
+    text-align: center;
+    color: black;
+    border: 2px solid #275673;
+    margin: 5%;
+}
+
+.col2 {
+    display: flex;
+    column-gap: 1%;
+}
+
+@media only screen and (min-width: 900px) {
+    .cols {
+        display: flex;
+        column-gap: 1%;
+    }
+
+   #img{
+    border:5px solid #2f7327;
+    border-radius: 3%;
+   }
+
+
+}
