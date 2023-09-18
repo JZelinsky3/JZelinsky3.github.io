@@ -1,15 +1,3 @@
-var moving = 0
-const animate = () => {
-
-  if (moving > 0) {
-    document.getElementById("icon").classList.remove("animate");
-    moving = 0
-  } else {
-    document.getElementById("icon").classList.add("animate");
-    moving = 1
-   }
-}
-
 
 function elementFromHtml(html) {
   console.log(html);
@@ -36,7 +24,6 @@ const hideImg = () => {
 }
 
 window.onload = () => {
-  document.getElementById("animate-button").onclick = animate;
   document.getElementById("add-comment").onclick = displayText;
   document.getElementById("hide").onclick = hideImg;
   document.getElementById("show").onclick = showImg;
