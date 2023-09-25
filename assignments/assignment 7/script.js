@@ -1,3 +1,16 @@
+
+
+const menu = document.getElementById("menu");
+const nav = document.querySelector("nav ul");
+const ex1Content = document.getElementById("ex1-content");
+const ex2Content = document.getElementById("ex2-content");
+const ex1Button = document.getElementById("ex1");
+const ex2Button = document.getElementById("ex2");
+const donationAmountInput = document.getElementById("donationAmount");
+const fund = document.getElementById("fund");
+const bar = document.getElementById("bar");
+const result1 = document.getElementById("result1");
+
 // Show Exercise 1 content and hide Exercise 2
 ex1Button.classList.add("active");
 ex2Content.style.display = "none";
@@ -18,25 +31,14 @@ ex2Button.onclick = function () {
     fund.style.display = "block";
 };
 
-const menuToggle = document.getElementById("menu-toggle");
-const nav = document.querySelector("nav ul");
-const ex1Content = document.getElementById("ex1-content");
-const ex2Content = document.getElementById("ex2-content");
-const ex1Button = document.getElementById("ex1");
-const ex2Button = document.getElementById("ex2");
-const donationAmountInput = document.getElementById("donationAmount");
-const fundRaising = document.getElementById("fundRaising");
-const progress = document.getElementById("progress");
-const result1 = document.getElementById("result1");
-
-menuToggle.onclick = function () {
-    menuToggle.classList.toggle("active");
+menu.onclick = function () {
+    menu.classList.toggle("active");
     nav.classList.toggle("active");
 };
 
 nav.onclick = function (event) {
     if (event.target.tagName === "LI") {
-        menuToggle.classList.remove("active");
+        menu.classList.remove("active");
         nav.classList.remove("active");
     }
 };
@@ -52,7 +54,7 @@ oldestButton.onclick = function () {
     const age3 = parseFloat(document.getElementById("age3").value);
 
     if (!name1 || isNaN(age1) || !name2 || isNaN(age2) || !name3 || isNaN(age3)) {
-        result1.textContent = "Please enter valid information for all three persons.";
+        result1.textContent = "Invalid Information";
     } else {
         const people = [
             { name: name1, age: age1 },
@@ -68,12 +70,12 @@ oldestButton.onclick = function () {
 };
 
 // The fund raising meter
-const updateThermometerButton = document.getElementById("updateThermometer");
-updateThermometerButton.onclick = function () {
+const updateBarButton = document.getElementById("updateBar");
+updateBarButton.onclick = function () {
     const donationAmount = parseFloat(donationAmountInput.value);
     if (!isNaN(donationAmount)) {
         const goal = 10000;
         const percentage = Math.min(100, (donationAmount / goal) * 100);
-        progress.style.width = percentage + "%";
+        bar.style.width = percentage + "%";
     }
 };

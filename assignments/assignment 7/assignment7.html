@@ -1,59 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
     <title>Assignment 7</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.5">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<header>
-    <div class="menu-toggle" id="menu-toggle">
-        <div class="bar"></div>
-        <div class="bar"></div>
-        <div class="bar"></div>
-    </div>
-    <nav>
-        <ul>
-            <li class="active" id="ex1">Exercise 1</li>
-            <li id="ex2">Exercise 2</li>
-        </ul>
-    </nav>
-</header>
+    <header>
+
+        <div class="main-cols">
+            <div class="col1">
+                <a href="../../index.html"><h1>If Statement Assignment</h1></a>
+            </div>
+
+            <div class="menu" id="menu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+
+            <div class="col2">
+                <nav>
+                    <ul>
+                        <li class="active" id="ex1">Exercise 1</li>
+                        <li id="ex2">Exercise 2</li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+    </header>
 
     <main>
         <div id="ex1-content">
-            <h2>Who's the Oldest?</h2>
+            <h1>Who's the Oldest?</h1>
             <div class="txtgp">
-                <input type="text" id="name1" placeholder="Name 1">
-                <input type="number" id="age1" placeholder="Age 1">
+                <h3>Name 1:<input type="text" id="name1"></h3>
             </div>
             <div class="txtgp">
-                <input type="text" id="name2" placeholder="Name 2">
-                <input type="number" id="age2" placeholder="Age 2">
+                <h3>Age 1:<input type="number" id="age1"></h3>
             </div>
             <div class="txtgp">
-                <input type="text" id="name3" placeholder="Name 3">
-                <input type="number" id="age3" placeholder="Age 3">
+                <h3>Name 2:<input type="text" id="name2"></h3>
+            </div>
+            <div class="txtgp">
+                <h3>Age 2:<input type="number" id="age2"></h3>
+            </div>
+            <div class="txtgp">
+                <h3>Name 3:<input type="text" id="name3"></h3>
+            </div>
+            <div class="txtgp">
+                <h3>Age 3:<input type="number" id="age3"></h3>
             </div>
             <button id="oldest">Compare Ages</button>
             <p id="result1"></p>
         </div>
 
         <div id="ex2-content" class="hidden">
-            <h2>Fund Raising</h2>
-            <p>Goal: $10,000</p>
+            <h1>Fund Raising</h1> <br>
+            <h3>Goal: $10,000</h3>
             <div class="txtgp">
-                <input type="number" id="donationAmount" placeholder="Donation Amount">
-                <button id="updateThermometer">Update Fund Raising</button>
+                <h3>Funds Raised:<input type="number" id="donationAmount"></h3>
+                <button id="updateBar">Display</button>
             </div>
             <div class="fund" id="fund">
                 <p>Goal: $10,000</p>
-                <div class="progress" id="progress"></div>
+                <div class="bar" id="bar"></div>
             </div>
         </div>
     </main>
 
     <script src="script.js"></script>
+
 </body>
 </html>
