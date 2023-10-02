@@ -2,7 +2,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
     margin: 0;
     background-color: #188a36;
 }
@@ -50,14 +49,14 @@ a {
 }
 
 .man {
-    width: 200px;
+    width: 190px;
     margin-top: 20px;
     transition: all 1.0s ease;
 }
 
 .thermometer {
     width: 70px;
-    height: 300px;
+    height: 310px;
     background-color: #ffffff;
     position: relative;
     margin-top: 45px;
@@ -68,7 +67,7 @@ a {
     justify-content: center;
 }
 
-.mercury {
+.mer {
     width: 100%;
     background-color: #000000;
     position: absolute;

@@ -1,5 +1,5 @@
 const runningMan = document.getElementById('runMan');
-const temperatureInput = document.getElementById('temperatureInput');
+const tempInput = document.getElementById('tempInput');
 const mercury = document.querySelector('.mercury');
 
 let currentPosition = 0;
@@ -42,11 +42,11 @@ function startAnimation() {
     }, 100);
 }
 
-function increaseTemperature() {
-    const temperature = parseFloat(temperatureInput.value);
-    if (!isNaN(temperature)) {
+function increaseTemp() {
+    const temp = parseFloat(tempInput.value);
+    if (!isNaN(temp)) {
         const maxHeight = 10000;
-        const mercuryHeight = (temperature / maxHeight) * 100;
+        const mercuryHeight = (temp / maxHeight) * 100;
         mercury.style.height = `${mercuryHeight}%`;
     }
 }
