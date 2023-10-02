@@ -1,19 +1,25 @@
 body {
-    display: flex;
-    justify-content: center;
     align-items: center;
     margin: 0;
     background-color: #188a36;
 }
 
-a {
-    text-decoration: none;
-    color: #000000;
+h1 {
+    text-align: center;
 }
 
 #main-header {
     text-align: center;
     background-color: #ffffff;
+    border-radius: 10px;
+    width: 90%;
+    margin-left: 60px;
+}
+
+#main-header a {
+    text-decoration: none;
+    color: #000000;
+    text-align: center;
 }
 
 #main-content {

@@ -152,6 +152,46 @@ h3 {
     margin: 10px;
 }
 
+#third-content {
+    background-color: lightcoral;
+    padding: 8px;
+}
+
+#third-content a {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(33, 33, 156);
+    text-decoration: none;
+    font-size: larger;
+}
+
+#third-content p {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#third-content a:hover {
+    color: lightcoral;
+}
+
+#third-content img {
+    border: 5px dashed rgb(33, 33, 156);
+    border-radius: 8px;
+    padding: 5px;
+    margin: 10px;
+  }
+
+#third-content img:hover {
+    border: 10px solid;
+    color: lightcoral;
+}
+
+.col3-1of3 {
+    flex: 1;
+    background-color: bisque;
+    text-align: center;
+    border-radius: 5px;
+    margin: 10px;
+}
+
 /* Footer */
 
 #main-footer {

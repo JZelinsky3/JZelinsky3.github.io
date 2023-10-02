@@ -1,6 +1,6 @@
 const runningMan = document.getElementById('runMan');
 const tempInput = document.getElementById('tempInput');
-const mercury = document.querySelector('.mercury');
+const mer = document.querySelector('.mer');
 
 let currentPosition = 0;
 let isWalking = true;
@@ -46,7 +46,7 @@ function increaseTemp() {
     const temp = parseFloat(tempInput.value);
     if (!isNaN(temp)) {
         const maxHeight = 10000;
-        const mercuryHeight = (temp / maxHeight) * 100;
-        mercury.style.height = `${mercuryHeight}%`;
+        const merHeight = (temp / maxHeight) * 100;
+        mer.style.height = `${merHeight}%`;
     }
 }
