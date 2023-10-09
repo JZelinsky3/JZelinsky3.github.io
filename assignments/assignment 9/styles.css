@@ -1,0 +1,86 @@
+body {
+    background-color: rgb(96, 96, 96);
+    font-family: 'Times New Roman', Times, serif
+}
+
+h1 {
+    text-align: center;
+    font-size: 40px;
+}
+
+p {
+    text-align: left;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.row {
+    display: flex;
+    gap: 15px;
+    background-color: black;
+    padding: 15px;
+}
+
+.col {
+    flex: 1;
+    background-color: rgb(31, 143, 58);
+    padding: 15px;
+}
+
+#slide {
+    background: rgb(255, 255, 255);
+    width: 100%;
+    text-align: center;
+}
+
+#slide p {
+    font-size: 20px;
+}
+
+.hid {
+    display: none;
+}
+
+#draw-container {
+    padding: 10px;
+}
+
+#draw {
+    padding: 4px;
+    background-color: black;
+    color: rgb(255, 255, 255);
+    border-radius: 4px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#draw:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(31, 143, 58);
+}
+
+#rainbow-container {
+    position: relative;
+}
+
+#gold {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.color-line {
+    display: block;
+    width: 100%;
+    margin: 0;
+}
+
+/* Media Query */
+@media (max-width: 900px) {
+    .row {
+        flex-direction: column;
+    }
+}
