@@ -99,8 +99,8 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 40px;
-    background-color: #f0f0f0;
+    padding: 20px;
+    background-color: #ffffff;
 }
 
 .text {
@@ -132,22 +132,6 @@ body {
     color: #2c9546;
 }
 
-.black-button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #000000;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-    font-size: 40px ;
-    position: relative;
-}
-
-.black-button:hover {
-    background-color: #333333; 
-}
-
 .img {
     flex: 1;
     /*padding: 20px;*/
@@ -163,7 +147,7 @@ body {
 }
 
 .main-content:nth-child(even) {
-    background-color: #e0e0e0; 
+    background-color: #ffb8b8; 
 }
 
 .four-cols {
@@ -215,6 +199,7 @@ body {
     text-align: center;
     font-size: 28px;
     padding-bottom: 10px;
+    padding-top: 10px;
 }
 
 .dropbtn {
