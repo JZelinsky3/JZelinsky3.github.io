@@ -1,0 +1,59 @@
+body {
+    flex-wrap: wrap;
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header {
+    background-color: #308c39;
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.toy-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.toy {
+    position: relative;
+    overflow: hidden;
+    border: 5px dashed #000000;
+    cursor: pointer;
+    width: 350px;
+    height: 370px;
+    margin: 20px;
+}
+
+.toy img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.toy-info {
+    position: absolute;
+    transform: translate(-49%, -51%);
+    text-align: center;
+    color: white;
+    padding: 20px;
+    display: none;
+    top: 50%;
+    left: 50%;
+    background-color: rgba(53, 53, 53, 0.7);
+}
+
+.toy:hover .toy-info {
+    display: block;
+}
