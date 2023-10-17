@@ -208,6 +208,67 @@ h3 {
     margin: 10px;
 }
 
+#heading {
+    text-align: center;
+    color: #fff;
+}
+
+#fourth-content {
+    background-color: bisque;
+    padding: 8px;
+}
+
+#fourth-content a {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(33, 33, 156);
+    text-decoration: none;
+    font-size: larger;
+}
+
+#fourth-content p {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#fourth-content a:hover {
+    color: bisque;
+}
+
+#fourth-content img {
+    border: 5px dashed rgb(33, 33, 156);
+    border-radius: 8px;
+    padding: 5px;
+    margin: 10px;
+  }
+
+#fourth-content img:hover {
+    border: 10px solid;
+    color: bisque;
+}
+
+.col4-1of3 {
+    flex: 1;
+    background-color: lightcoral;
+    text-align: center;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.col4-2of3 {
+    flex: 1;
+    background-color: lightcoral;
+    text-align: center;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.col4-3of3 {
+    flex: 1;
+    background-color: lightcoral;
+    text-align: center;
+    border-radius: 5px;
+    margin: 10px;
+}
+
 /* Footer */
 
 #main-footer {
