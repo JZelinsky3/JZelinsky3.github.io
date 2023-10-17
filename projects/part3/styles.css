@@ -364,6 +364,10 @@ footer {
     background-color: #333;
 }
 
+.info {
+    text-align: center;
+}
+
 /* Media Query */
 @media (max-width: 768px) {
     .main-header header {
