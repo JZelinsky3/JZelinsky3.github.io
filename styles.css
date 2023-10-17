@@ -213,34 +213,66 @@ h3 {
     color: #fff;
 }
 
-#fourth-content {
-    background-color: bisque;
+#proj-content {
+    background-color: lightcoral;
     padding: 8px;
 }
 
-#fourth-content a {
+#proj-content a {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: rgb(33, 33, 156);
     text-decoration: none;
     font-size: larger;
 }
 
-#fourth-content p {
+#proj-content p {
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-#fourth-content a:hover {
-    color: bisque;
+#proj-content a:hover {
+    color: lightcoral;
 }
 
-#fourth-content img {
+#proj-content img {
     border: 5px dashed rgb(33, 33, 156);
     border-radius: 8px;
     padding: 5px;
     margin: 10px;
   }
 
-#fourth-content img:hover {
+#proj-content img:hover {
+    border: 10px solid;
+    color: lightcoral;
+}
+
+#proj2-content {
+    background-color: bisque;
+    padding: 8px;
+}
+
+#proj2-content a {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(33, 33, 156);
+    text-decoration: none;
+    font-size: larger;
+}
+
+#proj2-content p {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#proj2-content a:hover {
+    color: bisque;
+}
+
+#proj2-content img {
+    border: 5px dashed rgb(33, 33, 156);
+    border-radius: 8px;
+    padding: 5px;
+    margin: 10px;
+  }
+
+#proj2-content img:hover {
     border: 10px solid;
     color: bisque;
 }
