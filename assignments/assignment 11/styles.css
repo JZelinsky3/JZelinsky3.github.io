@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #22991c;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 18px;
+    color: #fff;
+}
+
+#main-header a {
+    text-align: center;
+    font-size: 32px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    color: #fff;
+}
+
+#main-header a:hover {
+    color: #000000;
+    font-size: 38px;
+}
+
+.details {
+    flex: 1;
+}
+
+.actors {
+    font-style: italic;
+}
+
+.mov-col {
+    width: 80%;
+    margin: 23px 0;
+    padding: 18px;
+    background-color: #000000;
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.mov-title {
+    font-weight: bold;
+    font-size: 1.3em;
+    margin-bottom: 12px;
+    padding-right: 13px;
+}
+
+.mov-img {
+    width: 165px;
+    height: auto;
+    margin-right: 23px;
+    border: #001ca7;
+    border-radius: 12px;
+    
+}
+.mov-img:hover {
+    transform: scale(1.4);
+}
