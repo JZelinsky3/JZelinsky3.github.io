@@ -518,6 +518,10 @@ input[type="text"] {
     color: #2c9546;
 }
 
+.footer-cols2 p {
+    color: #fff;
+}
+
 /* Media Query */
 @media (max-width: 768px) {
     .main-header header {
