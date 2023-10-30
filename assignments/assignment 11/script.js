@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 movBox.appendChild(movCol);
             });
         } catch (error) {
-            console.error("Error fetching data: ", error);
+            console.error("ERROR, couldn't fetch data: ", error);
         }
     }
 
