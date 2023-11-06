@@ -41,6 +41,13 @@ app.get('/',(req, res) => {
             year: 1973,
             tracks: ['Time', 'Money', 'Us and Them'],
             image: 'img/dsotm.jpg',
+          },
+          {id: 5,
+          title: 'Rumours',
+          artist: 'Fleetwood Mac',
+          year: 1977,
+          tracks: ['Go Your Own Way', 'Dreams', 'Don\'t Stop'],
+          image: 'img/rumours.jpg'
           }
         ];
     
