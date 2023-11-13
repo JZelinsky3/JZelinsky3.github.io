@@ -333,6 +333,62 @@ h3 {
     margin: 10px;
 }
 
+#fifth-content {
+    background-color: lightcoral;
+    padding: 8px;
+}
+
+#fifth-content a {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(33, 33, 156);
+    text-decoration: none;
+    font-size: larger;
+}
+
+#fifth-content p {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#fifth-content a:hover {
+    color: lightcoral;
+}
+
+#fifth-content img {
+    border: 5px dashed rgb(33, 33, 156);
+    border-radius: 8px;
+    padding: 5px;
+    margin: 10px;
+  }
+
+#fifth-content img:hover {
+    border: 10px solid;
+    color: lightcoral;
+}
+
+.col5-1of3 {
+    flex: 1;
+    background-color: bisque;
+    text-align: center;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.col5-2of3 {
+    flex: 1;
+    background-color: bisque;
+    text-align: center;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.col5-3of3 {
+    flex: 1;
+    background-color: bisque;
+    text-align: center;
+    border-radius: 5px;
+    margin: 10px;
+}
+
 .footer-cols2 {
     color: #D4AF37;
     padding: 1%;
