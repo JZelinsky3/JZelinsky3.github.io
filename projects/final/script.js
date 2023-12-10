@@ -5,6 +5,11 @@ hamburgerMenu.addEventListener('click', () => {
     mainNav.classList.toggle('show');
 });
 
+mongoose
+  .connect("mongodb+srv://jzelinsky18:nSzIkd4O4vtyOCo0@cluster0.0fwvmjy.mongodb.net/?retryWrites=true&w=majority")
+  .then(() => console.log("Connected to mongodb..."))
+  .catch((err) => console.error("could not connect to mongodb...", err));
+
 const displayText = () => {
     const productName = document.getElementById("product-name").value;
     html = '<section class="toutput"> <h3>'+ productName +'</h3>'
