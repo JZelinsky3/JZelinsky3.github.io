@@ -5,61 +5,58 @@ hamburgerMenu.addEventListener('click', () => {
     mainNav.classList.toggle('show');
 });
 
-mongoose
-  .connect("mongodb+srv://jzelinsky18:nSzIkd4O4vtyOCo0@cluster0.0fwvmjy.mongodb.net/?retryWrites=true&w=majority")
-  .then(() => console.log("Connected to mongodb..."))
-  .catch((err) => console.error("could not connect to mongodb...", err));
-
 const displayText = () => {
     const productName = document.getElementById("product-name").value;
-    html = '<section class="toutput"> <h3>'+ productName +'</h3>'
-    html = elementFromHtml(html);
-    document.getElementById("responses").appendChild(html);
-  }
+    let html = '<section class="toutput"> <h3>' + productName + '</h3></section>';
+    const element = document.createElement('div');
+    element.innerHTML = html;
+    document.getElementById("responses").appendChild(element);
+};
 
-  const displayText2 = () => {
+const displayText2 = () => {
     const username = document.getElementById("username").value;
     const email = document.getElementById("email").value;
-    html = '<section class="toutput"><h3>'+ username +'</h3> <p>' + email +'</p> </section>'
-    html = elementFromHtml(html);
-    document.getElementById("responses").appendChild(html);
-  }
+    let html = '<section class="toutput"><h3>' + username + '</h3> <p>' + email + '</p></section>';
+    const element = document.createElement('div');
+    element.innerHTML = html;
+    document.getElementById("responses").appendChild(element);
+};
 
-  window.onload = () => {
+window.onload = () => {
     document.getElementById("submit").onclick = displayText;
-  }
+};
 
 const showEmailResult = async (e) => {
-  e.preventDefault();
-  const result = document.getElementById("result");
-  let response = await getEmailResult();
-  if (response.status == 210) {
-      result.innerHTML = "Email Successfully Sent!";
-  } else {
-      result.innerHTML = "Unfortunately, your email wasn't sent.";
-  }
+    e.preventDefault();
+    const result = document.getElementById("result");
+    let response = await getEmailResult();
+    if (response.status == 210) {
+        result.innerHTML = "Email Successfully Sent!";
+    } else {
+        result.innerHTML = "Unfortunately, your email wasn't sent.";
+    }
 };
 
 const getEmailResult = async () => {
-  const form = document.getElementById("cform");
-  const formData = new FormData(form);
-  const object = Object.fromEntries(formData);
-  const json = JSON.stringify(object);
+    const form = document.getElementById("cform");
+    const formData = new FormData(form);
+    const object = Object.fromEntries(formData);
+    const json = JSON.stringify(object);
 
-  try {
-      const response = await fetch("https://api.web3forms.com/submit", {
-          method: "POST",
-          headers: {
-              "Content-Type": "application/json",
-              Accept: "application/json",
-          },
-          body: json,
-      });
-      return response;
-  } catch (error) {
-      console.error(error);
-      document.getElementById("result").innerHTML = "Unfortunately, your email wasn't sent";
-  }
+    try {
+        const response = await fetch("https://api.web3forms.com/submit", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+                Accept: "application/json",
+            },
+            body: json,
+        });
+        return response;
+    } catch (error) {
+        console.error(error);
+        document.getElementById("result").innerHTML = "Unfortunately, your email wasn't sent";
+    }
 };
 
 document.getElementById("cform").onsubmit = showEmailResult;
